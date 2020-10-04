@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <script rel="preload" as="script" crossorigin="anonymous"
+        src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+</head>
+<body>
+    <header>   
+        <img class="logo"  src="./kfc.png" />
+        <h1 class="title">&nbsp WELCOME KFC <br>Nguyễn Hữu Thắng </h1> 
+         
+        <!-- <h2 class="sdt">SDT:0904863503</h2> -->
+    </header>
+    <div class="order">
+        <h1 class="header">ĐƠN HÀNG CỦA BẠN</h1>
+        <ul id="order-items">
+            <li class="order-item">
+                <span class="item-name">Pizza 001</span>
+                <span class="item-quantity">
+                    <button>-</button>
+                    <input type="number" value="1" />
+                    <button>+</button>
+                </span>
+
+                <span class="item-price">
+                    <span>$7.99</span>
+                    <button>X</button>
+                </span>
+            </li>
+            <li class="order-item">
+                <span class="item-name">Pizza 001</span>
+                <span class="item-quantity">
+                    <button>-</button>
+                    <input type="number" value="1" />
+                    <button>+</button>
+                </span>
+
+                <span class="item-price">
+                    <span>$7.99</span>
+                    <button class ="btn-delete">X</button>
+                </span>
+            </li>
+            <li class="order-item">
+                <span class="item-name">Pizza 001</span>
+                <span class="item-quantity">
+                    <button>-</button>
+                    <input type="number" value="1" />
+                    <button>+</button>
+                </span>
+
+                <span class="item-price">
+                    <span>$7.99</span>
+                    <button>X</button>
+                </span>
+            </li>
+        </ul>
+        <button id="btn-add">Thêm nước</button>
+        <div class="order-summary">
+            <p>Thanh toán <span id="sub-total" class="money">$15.98</span></p>
+            <p>Thuế <span id="shipping" class="money">$2</span></p>
+            <p>Tổng tiền thanh toán <span id="total" class="money">$17</span></p>
+        </div>
+
+        <button id="btn-checkout">Xuất Bill</button>
+    </div>
+</body>
+<script src="./helper.js"></script>
+<script src="./script.js"></script>
+
+</html>
